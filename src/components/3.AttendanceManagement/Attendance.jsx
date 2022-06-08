@@ -2,7 +2,13 @@ import React from 'react'
 
 const Attendance = () => {
     return (
-        <div>Attendance</div>
+        <div className="container">
+            <div className="row">
+                <div className="col-12 text-center">
+                    <h1 className='py-4'>Attendance Management</h1>
+                </div>
+            </div>
+        </div>
     )
 }
 
