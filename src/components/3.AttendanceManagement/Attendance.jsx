@@ -6,7 +6,7 @@ const Attendance = () => {
             <div className="row d-flex justify-content-center">
                 <h1 className='py-4 text-center'>Attendance Management</h1>
 
-                <div className='card p-4 col-md-6'>
+                <div className='card p-4 col-md-6 col-10'>
                     <form>
                         <div className="mb-3">
                             <input type="text" className="form-control" id="user-id" placeholder='User ID' />
