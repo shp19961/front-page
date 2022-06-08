@@ -5,9 +5,9 @@ import { NavLink } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <div className="container">
-            <h1 className='text-center py-4'>Welcome Username !</h1>
-            <div className="row py-4 justify-content-center">
+        <div className="container py-2">
+            <h1 className='text-center py-md-5 py-3'>Welcome Username !</h1>
+            <div className="row py-md-4 py-3 justify-content-center">
 
                 <div className='col-lg-2 col-md-4 col-12 d-flex justify-content-center'>
                     <NavLink to="attendance-management">
