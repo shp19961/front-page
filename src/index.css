@@ -5,11 +5,11 @@
 }
 
 .nav-link:hover {
-    color: green !important;
+    color: orange !important;
 }
 
 .active {
-    color: orangered !important;
+    color: red !important;
 }
 
 .navbar {
@@ -27,8 +27,4 @@
 
 
 
-/* @media only screen and (max-width:653px) and (min-width:280px){
-    .navbar-brand{
-        font-size: small !important;
-    }
-} */
+@media only screen and (max-width:653px) and (min-width:280px) {}
