@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify'
 
 const Attendance = () => {
 
@@ -10,6 +11,7 @@ const Attendance = () => {
 
     const onFormSubmit = (e) => {
         e.preventDefault()
+        toast.success("submitted successfully")
         console.log(PunchLog)
     }
 
@@ -21,14 +23,14 @@ const Attendance = () => {
                 <div className='card p-4 col-md-6 col-10'>
                     <form onSubmit={onFormSubmit}>
                         <div className="mb-3">
-                            <input onChange={onInputChange} type="text" name='UserId' value={UserId} className="form-control" id="user-id" placeholder='User ID' />
+                            <input onChange={onInputChange} type="text" name='UserId' value={UserId} className="form-control" id="user-id" placeholder='User ID' required />
                         </div>
                         <div className="mb-3">
                             {/* <label htmlhtmlFor='date-time' className='form-label'>Select date & time</label> */}
-                            <input onChange={onInputChange} type="datetime-local" name='LogTime' value={LogTime} className="form-control" id="date-time" />
+                            <input onChange={onInputChange} type="datetime-local" name='LogTime' value={LogTime} className="form-control" id="date-time" required />
                         </div>
                         <div className='mb-3'>
-                            <select onChange={onInputChange} className="form-select" name='Type'>
+                            <select onChange={onInputChange} className="form-select" name='Type' required>
                                 <option value="">Select type</option>
                                 <option value="CheckIn">CheckIn</option>
                                 <option value="CheckOut">CheckOut</option>
@@ -37,7 +39,7 @@ const Attendance = () => {
                             </select>
                         </div>
                         <div className='mb-3'>
-                            <select onChange={onInputChange} className="form-select" name='InputType'>
+                            <select onChange={onInputChange} className="form-select" name='InputType' required>
                                 <option value="">Select input type</option>
                                 <option value="Fingerprint">Fingerprint</option>
                                 <option value="Card">Card</option>
@@ -48,11 +50,11 @@ const Attendance = () => {
                         <div className="mb-3">
                             <label>Face Mask</label>
                             <div className="form-check form-check-inline mx-3">
-                                <input onChange={onInputChange} className="form-check-input" type="radio" name="FaceMask" id="inlineRadio1" value={true} />
+                                <input onChange={onInputChange} className="form-check-input" type="radio" name="FaceMask" id="inlineRadio1" value={true} required />
                                 <label className="form-check-label" htmlFor="inlineRadio1">Yes</label>
                             </div>
                             <div className="form-check form-check-inline">
-                                <input onChange={onInputChange} className="form-check-input" type="radio" name="FaceMask" id="inlineRadio2" value={false} />
+                                <input onChange={onInputChange} className="form-check-input" type="radio" name="FaceMask" id="inlineRadio2" value={false} required />
                                 <label className="form-check-label" htmlFor="inlineRadio2">No</label>
                             </div>
                         </div>

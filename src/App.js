@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify';
 import Navbar from './components/1.Navbar/Navbar';
 import Home from './components/2.Home/Home';
 import Attendance from './components/3.AttendanceManagement/Attendance';
@@ -9,6 +10,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
+        <ToastContainer />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/attendance-management' element={<Attendance />} />
