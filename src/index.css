@@ -18,13 +18,13 @@
 
 
 .ams-btn,
-.lms-btn {
-    height: 78px;
-    width: 185px;
+.lms-btn,
+.timesheet-btn {
+    height: 84px;
+    width: 229px;
     font-size: xx-large !important;
     border-radius: 11px !important;
 }
-
 
 
 @media only screen and (max-width:653px) and (min-width:280px) {}

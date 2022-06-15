@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { ImHome } from 'react-icons/im'
-import { BsCalendarWeek } from 'react-icons/bs'
+import { BsCalendarWeek, BsFillFileEarmarkSpreadsheetFill } from 'react-icons/bs'
 import { IoMdFingerPrint } from 'react-icons/io'
 import { AiOutlineLogout } from 'react-icons/ai'
 
@@ -23,6 +23,9 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link mx-lg-1" aria-current="page" to="/leave-management"><BsCalendarWeek size={21} /></NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link mx-lg-1" aria-current="page" to="/time-sheet"><BsFillFileEarmarkSpreadsheetFill size={21} /></NavLink>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link mx-lg-1" aria-current="page" href="#"><AiOutlineLogout size={21} /></a>
